@@ -1,0 +1,83 @@
+/* Resim boyutları */
+.image {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    /* Resmin boyutunu kareye sığdırır, kaydırmadan */
+    border-radius: 8px;
+}
+
+/* Kart tasarımı */
+.card {
+    width: 220px;
+    height: 450px;
+    border-radius: 15px;
+    /* Kenarları yuvarlat */
+    margin: 20px;
+    background-color: #fff;
+    /* Kart arka planını beyaz yap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Hoverda daha belirgin gölge */
+    transform: translateY(-5px);
+    /* Hoverda yukarı kayma */
+    cursor: pointer;
+}
+
+/* Detay butonu */
+.detail-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #3498db;
+    /* Buton rengi: Canlı mavi */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.detail-button:hover {
+    background-color: #2980b9;
+    /* Hoverda daha koyu mavi */
+    transform: scale(1.05);
+    /* Hoverda butonu biraz büyüt */
+}
+
+/* Renk geçişi ve butonlar */
+.detail-button:focus-visible {
+    outline: 3px solid #3498db;
+    /* Fokusta mavi kenarlık */
+}
+
+/* Kart başlık ve metin */
+.card h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Karttaki resim başlık hizalaması */
+.card .image {
+    margin-bottom: 15px;
+}
+
+/* Hoverda buton ve kart animasyonları */
+.card:hover .detail-button {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    /* Buton hoverda biraz büyüsün */
+}
